@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Collage</title>
+  <style>
+    body {
+      
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      
+    }
+
+    .video-collage {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+      grid-template-rows: repeat(2, 1fr);  /* 2 rows */
+      gap: 10px; /* Spacing between videos */
+      width: 90%; /* Adjust width as needed */
+      max-width: 1200px;
+    }
+
+    .video-collage video {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="video-collage">
+    <video controls>
+      <source src="img/vid1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video controls>
+      <source src="img/vid2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video controls>
+      <source src="img/vid3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video controls>
+      <source src="video4.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video controls>
+      <source src="video5.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video controls>
+      <source src="video6.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</body>
+</html>
